@@ -6,12 +6,6 @@ pub use crate::authenticated::characters::LegendId;
 
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
 #[cfg_attr(test, serde(deny_unknown_fields))]
-pub struct PetSkill {
-	pub id: SkillId,
-}
-
-#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
-#[cfg_attr(test, serde(deny_unknown_fields))]
 pub struct Legend {
 	pub id: String,
 	pub code: u8,
